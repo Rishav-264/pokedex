@@ -1,0 +1,75 @@
+.gridRow{
+    /* border-bottom: 1px solid #dbdbdb; */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -10px, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px, rgba(10, 37, 64, 0.5) 0px -1px 3px 0px inset;
+}
+.gridRow span{
+    width: fit-content;
+    margin: auto;
+}
+.gridRow span:first-child{
+    margin: 0;
+}
+.gridRow:hover{
+    background-color: #fff9e0;
+}
+
+.spriteContainer{
+    background-color: rgba(122, 199, 76, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sprite{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card{
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    width: 270px;
+    height: 300px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card:hover .sprite{
+    transform: scale(1.25);
+}
+
+.card p {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 800;
+    color: #575958;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+.typesContainer{
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.typesContainer div{
+    padding: 3px 13px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.typesContainer div span{
+    position: relative;
+    bottom: 1.5px;
+    text-transform: capitalize;
+}

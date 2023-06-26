@@ -1,0 +1,31 @@
+.stats{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 60px 150px 265px;
+    height: 30px;
+    align-items: center;
+    column-gap: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.stats div:first-child{
+    text-align: right;
+    color: #737373;
+}
+
+.stat{
+    height: 11px;
+    border-radius: 5px;
+    animation: slide-in 0.7s ease forwards;
+    width: var(--target-width);
+}
+
+@keyframes slide-in {
+    0% {
+        width: 0;
+      }
+      100% {
+        width: var(--target-width); /* Set your target width here */
+      }
+  }

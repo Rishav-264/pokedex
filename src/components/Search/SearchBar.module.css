@@ -1,0 +1,38 @@
+.container{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.container input{
+    min-height: 50px;
+    width: 100%;
+    padding: 0 1rem;
+    color: black;
+    font-size: 15px;
+    border: 1px solid #dcdedc;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.container button{
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #dcdedc;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.container button:hover {
+    background-color: #caccca;
+  }
+  
+.container input:focus, input:focus-visible {
+    border-color: #caccca;
+    outline: none;
+}
+

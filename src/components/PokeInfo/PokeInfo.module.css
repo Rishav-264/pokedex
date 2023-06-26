@@ -1,0 +1,32 @@
+.container h2{
+    text-transform: capitalize;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.title img{
+    cursor: pointer;
+}
+.infoContainer{
+    display: flex;
+    gap: 20px;
+}
+.basicInfo{
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.imageContainer{
+    background-color: #e6e3e3;
+    width: 350px;
+    height: 350px;
+}
+
+.imageContainer img{
+    width: 350px;
+    height: 350px;
+}
